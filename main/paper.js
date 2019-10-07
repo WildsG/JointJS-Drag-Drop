@@ -1,5 +1,5 @@
-let paperWidth = 1000;
-let paperHeight = 600;
+let paperWidth = 800;
+let paperHeight = 500;
 let paperGridSize = 5;
 
 let graph = new joint.dia.Graph;

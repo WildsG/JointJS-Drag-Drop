@@ -4,7 +4,7 @@ let yOffset = 50;
 let stencilGraph = new joint.dia.Graph,
     stencilPaper = new joint.dia.Paper({
         el: $('#stencil'),
-        height: 600,
+        height: 500,
         width: 140,
         model: stencilGraph,
         interactive: false,
