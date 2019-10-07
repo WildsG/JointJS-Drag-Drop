@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="jointjs/joint.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
+    <!-- <script src="https://kit.fontawesome.com/41c8a6790d.js"></script> -->
+</head>
+
+<body>
+    <!-- content -->
+        <div id="tools">
+            <div class="button-container">
+                <div class="messagepop pop">
+                    <input id="box-content" type="text" />
+                    <i id="close-create" class="button close far fa-times-circle"></i>
+                    <i id="confirm-create" class="button confirm far fa-check-circle"></i>
+                </div>
+                <i id="button-dialog-create" class="button fas fa-plus-circle"></i>
+            </div>
+        </div>
+        <div id="stencil"></div>
+        <div id="paper"></div>
+   
+
+    <!-- dependencies -->
+    <script src="jointjs/jquery.js"></script>
+    <script src="jointjs/lodash.js"></script>
+    <script src="jointjs/backbone.js"></script>
+    <script src="jointjs/joint.js"></script>
+
+    <!-- code -->
+    <script src="paper.js"></script>
+    <script src="typeConsts.js"></script>
+    <script src="linkTools.js"></script>
+    <script src="extended.js"></script>
+    <script src="graph.js"></script>
+    <script src="stencil.js"></script>
+</body>
+
+</html>

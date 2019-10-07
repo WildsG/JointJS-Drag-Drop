@@ -1,0 +1,118 @@
+#stencil{
+    border-left:1px solid black;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    overflow: auto;
+    float:left; 
+}
+
+#paper{
+    border:1px solid black;
+    float:left; 
+}
+
+.clickable-element{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.html-element {
+    position: absolute;
+    /* Make sure events are propagated to the JointJS element so, e.g. dragging works.*/
+    pointer-events: none;
+    -webkit-user-select: none;
+    z-index: 2;
+}
+.html-element select,
+.html-element input,
+.html-element button {
+    /* Enable interacting with inputs only. */
+    pointer-events: auto;
+}
+.html-element button.delete {
+    color: white;
+    border: none;
+    background-color: #C0392B;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: middle;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+.html-element button.delete:hover {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.html-element button.link {
+    color: white;
+    border: none;
+    background-color:darkblue;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: middle;
+    position: absolute;
+    top: -15px;
+    left: 100px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+.html-element button.link:hover {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+
+/* button to add element */
+
+.messagepop {
+  background-color:#FFFFFF;
+  border:1px solid #999999;
+  cursor:default;
+  display:none;
+  position:absolute;
+  margin-top: 18px;
+  text-align:left;
+  width:auto;
+  z-index:50;
+  padding: 10px 10px 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 3px;
+  text-indent: -15px;
+}
+
+.messagepop p, .messagepop.div {
+  border-bottom: 1px solid #EFEFEF;
+  margin: 20px 0;
+  padding-bottom: 8px;
+}
+
+.button{
+    cursor: pointer;
+}
+
+#close-create{
+    color:rgb(255, 0, 0);
+}
+
+#confirm-create{
+    color:green;
+}
